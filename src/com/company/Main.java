@@ -14,9 +14,8 @@ public class Main {
     // Just prints the menu
     private static void showMenu() {
         System.out.println("Select an option: (press 0 to quit)");
-        int count = 1;
-        for (String menuItem: programs.keySet()) {
-            System.out.println(Integer.toString(count) + ". " + menuItem);
+        for (int i = 0; i < programs.size(); i++) {
+            System.out.println(Integer.toString(i + 1) + ". " + programs.keySet().toArray(new String[programs.size()])[i]);
         }
     }
 
@@ -24,6 +23,7 @@ public class Main {
     private static void initializePrograms() {
         programs = new HashMap<>();
         programs.put("Easiest exercise ever", new Easiest());
+        programs.put("Draw a horizontal line", new HorizontalLine());
     }
 
     public static void main(String[] args) {
