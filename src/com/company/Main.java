@@ -22,8 +22,9 @@ public class Main {
     // Creates a HashMap of the program string names and their respective objects
     private static void initializePrograms() {
         programs = new HashMap<>();
-        programs.put("Easiest exercise ever", new Easiest());
+        programs.put("Draw a vertical line", new VerticalLine());
         programs.put("Draw a horizontal line", new HorizontalLine());
+        programs.put("Easiest exercise ever", new Easiest());
     }
 
     public static void main(String[] args) {

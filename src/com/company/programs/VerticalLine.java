@@ -1,8 +1,8 @@
 package com.company.programs;
 
-public class HorizontalLine extends Line {
+public class VerticalLine extends Line {
     @Override
     String delimiter() {
-        return "";
+        return "\n";
     }
 }
