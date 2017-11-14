@@ -18,4 +18,10 @@ public class Scan {
         }
         return input;
     }
+
+    public static String getString(String msg) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(msg);
+        return scanner.next();
+    }
 }
