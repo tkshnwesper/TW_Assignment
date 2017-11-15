@@ -21,6 +21,7 @@ public class Main {
     // Creates a HashMap of the program string names and their respective objects
     private static void initializePrograms() {
         programs = new HashMap<>();
+        programs.put("Prime Factors Exercise", new PrimeFactors());
         programs.put("FizzBuzz", new FizzBuzz());
         programs.put("Diamond with name", new DiamondWithName());
         programs.put("Diamond", new Diamond());
